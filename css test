@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            height: 100vh;
+            font-size: 2rem;
+            background-color: aqua;
+        }
+
+        .upper {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(127, 127, 32);
+            color: white;
+        }
+
+        .upper p {
+            text-align: center;
+            padding-top: 40vh;
+            text-transform: uppercase
+        }
+
+        .upper .circle {
+            background-color: bisque;
+            color: black;
+            width: 10vh;
+            height: 10vh;
+            line-height: 10vh;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 100vh;
+        }
+
+        /* .triangle:after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: #FFF;
+            bottom: -8px;
+            half of the elements width/height
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+        } */
+
+        .lower {
+            height: 20%;
+            width: 100%;
+            background-color: red;
+            color: white;
+            position: relative;
+        }
+        .lower .triangle {
+            width: 0;
+            height: 0;
+            /* position: absolute; */
+            border-left: 105px solid transparent;
+            border-right: 105px solid transparent;
+            border-top: 50px solid rgb(127, 127, 32);
+            margin-left: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="upper">
+            <p>pinak idea lab</p>
+            <div class="circle">:)</div>
+            
+        </div>
+        <div class="lower">
+            <div class="triangle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
